@@ -5,6 +5,8 @@ import UserCard from "./UserCard";
 import Status from "./Status";
 import Heading from "./Heading";
 import Heading1 from "./Heading1";
+import MyButton from "./MyButton";
+import StyleContainer from "./StyleContainer";
 type Props = {
   GreetMsg: string;
   StudentInfo: StudentInfo;
@@ -71,6 +73,10 @@ export default function Intro({ StudentInfo,GreetMsg }: Props) {
               THis is the second Heading in the Intro.tsx
           </Heading>
           </Heading1>
+          <MyButton HandleClick={(event,id)=>{
+            console.log(event,"Hi My Name is Arun How Are Youu",id);
+          }} />
+          <StyleContainer Styles={{color:'blue',fontSize:'22px',lineHeight:'1.9rem'}} />
         </div>
       </div>
     </>
