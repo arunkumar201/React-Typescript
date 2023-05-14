@@ -6,6 +6,7 @@ import Intro from './components/Intro'
 import UseState from "./components/Hooks/UseState";
 import UserAuth from './components/Hooks/UserAuth'
 import UseReducer from './components/Hooks/UseReducer'
+import ProductList from './components/Pagination/ProductList'
 function App() {
 const StudentInfo:StudentInfoType = {
   name: "Arun",
@@ -20,14 +21,16 @@ const StudentInfo:StudentInfoType = {
     ZipCode: number;
   }
   return (
-    <div className="App">
+    <div className="h-screen w-full">
       {/* <Intro 
       GreetMsg={"Hi I Am Arun Kumar"} 
         StudentInfo={StudentInfo}
       /> */}
       {/* <UseState/> */}
       {/* <UserAuth/> */}
-      <UseReducer/>
+      <ProductList/>
+      {/* <UseReducer/> */}
+      
     </div>
   )
 }
